@@ -1,0 +1,116 @@
+.contactus {
+    background: #E1D098;
+    position: absolute;
+    left: -130px;
+    top: -157px;
+    padding: 65px 200px 70px 80px;
+    -webkit-box-shadow: 0px 0px 23px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px -8px rgba(0,0,0,0.75);
+
+    &-title {
+        font-size: 58px;
+        font-weight: bold;
+        line-height: 80px;
+        color: #310000;
+        border-bottom: 1px solid #3C3C3C;
+        text-transform: capitalize;
+        margin-bottom: 100px;
+    }
+
+    &-line {
+        display: flex;
+        width: 40rem;
+
+        &__text {
+            font-size: 30px;
+            color: #310000;
+            line-height: 83px;
+            text-transform: capitalize;
+            font-weight: normal;
+            padding-left: 30px;
+        }
+    }
+
+    &-socials {
+        display: flex;
+        margin-top: 130px;
+    }
+}
+
+.instagram {
+    margin: 0 35px;
+}
+
+.contact-round__logo {
+    display: none;
+    position: absolute;
+    bottom: -145px;
+    left: 170px;
+}
+
+@media(max-width: 1700px) {
+    .contactus {
+        padding: 65px 80px 70px 60px;
+    }
+}
+
+@media(max-width: 1600px) {
+    .contactus {
+        padding: 65px 100px 70px 80px;
+    }
+
+    .contact-form {
+        padding: 31px 90px 50px 460px;
+    }
+}
+
+@media(max-width: 1400px){
+    .contactus {
+        padding: 35px 86px 45px 20px;
+    }
+
+    .contact-form {
+        padding: 31px 90px 50px 338px;
+    }
+}
+
+@media(max-width: 1300px) {
+    .contactus-title {
+        font-size: 45px;
+    }
+
+    .contactus-line__text {
+        font-size: 22px;
+    }
+
+    .contactus-line__icon {
+        width: 30px;
+    }
+
+    .contactus-socials {
+        margin-top: 50px;
+    }
+
+    .instagram, .facebook, .twitter {
+        width: 20px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .contactus {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .contact-form {
+        padding: 20px;
+        width: calc(100% - 60px);
+        margin: 50px auto;
+    }
+
+    .contactus-line__text {
+        font-size: 16px;
+    } 
+}

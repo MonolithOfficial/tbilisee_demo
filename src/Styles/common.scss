@@ -1,0 +1,584 @@
+// Shared Styles
+$white : #ffffff;
+$black-text: #310000;
+$golden: #E1D098;
+$black-footer: #1D1111;
+$golden-border: #91712B;
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.anchorClass {
+    color: #310000;
+}
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+  }
+   
+  /* Style your items */
+  .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    background: grey;
+    margin-bottom: 30px;
+  }
+
+.neigborhood-img2 {
+    height: 60%;
+    width: 100%;
+    margin-top: 12rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.margin-110 {
+    margin-top: 11rem;
+}
+
+.tbilisee-round {
+    position: absolute;
+    top: -130px;
+    left: 550px;
+}
+
+.loading {
+    background: #ffffff;
+    height: 1000rem;
+    width: 100%;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.background-image__cover {
+    background: no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.height-half {
+    height: 50%;
+}
+
+.height {
+    height: 100%;
+}
+
+// WebPage Container
+.container-own {
+    width: 1640px;
+    margin: auto;
+}
+
+@media(max-width: 1700px) {
+    .container-own {
+        width: 1500px;
+    }
+}
+
+@media(max-width: 1600px) {
+    .container-own {
+        width: 1400px;
+    }
+}
+
+@media(max-width: 1470px) {
+    .container-own {
+        width: 1270px;
+    }
+}
+
+@media(max-width: 1350px){
+    .container-own {
+        width: 1150px;
+    }
+}
+
+@media(max-width: 1200px){
+    .container-own {
+        width: 1000px;
+    }
+}
+@media(max-width: 1050px) {
+    .container-own {
+        width: 850px;
+    }
+}
+
+@media(max-width: 950px){
+    .container-own {
+        width: 700px;
+    }
+}
+
+@media(max-width: 765px){
+    .container-own {
+        width: 600px;
+    }
+}
+
+@media(max-width: 650px) {
+    .container-own {
+        width: 500px;
+    }
+
+    .book-now {
+        font-size: 11px !important;
+    }
+}
+
+@media(max-width: 540px){
+    .container-own {
+        width: 330px;
+    }
+}
+.burger-close {
+    position: absolute;
+    left: 15rem; 
+    top: 7.5rem;
+    cursor: pointer;
+    width: 4rem;
+}
+
+@media(max-width: 900px){
+    .burger-close {
+        left: 6rem;
+    }
+}
+
+// MASONRY CSS
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+  }
+   
+  /* Style your items */
+  .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    background: grey;
+    margin-bottom: 30px;
+  }
+
+.dropdown-menu__header {
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 1200;
+    position: fixed;
+    top: 0;
+}
+
+.dropdown-menu_wr {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.dropdown-menu_item {
+    font-size: 7rem;
+    color: $white;
+    cursor: pointer;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    line-height: 11rem;
+}
+
+@media(max-width: 768px) {
+    .dropdown-menu_item {
+        font-size: 28px !important;
+        line-height: 8rem;
+    }
+}
+
+@media(max-width: 1600px) {
+    .dropdown-menu_item {
+        line-height: 10rem;
+    }
+}
+
+.dropdown-menu_item:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    transition: width .3s
+}
+
+.dropdown-menu_item:hover:after {
+    width: 100%;
+    transition: width .3s
+}
+
+.direction-reverse {
+    direction: rtl;
+}
+
+.language-bar__white:hover .languages-bar{
+    display: block;
+    position: absolute;
+}
+
+.language-bar__white li {
+    cursor: pointer;
+}
+
+.header-language__changer {
+    border: none;
+    background: transparent;
+    color: #ffffff;
+}
+
+.language-bar__black:hover .languages-bar {
+    display: block;
+    position: absolute;
+}
+
+.language-bar__black li {
+    cursor: pointer;
+}
+
+.languages-bar {
+    display: none;
+}
+
+.languages-bar li {
+    cursor: pointer;
+}
+
+.book-now {
+    background-color: transparent;
+    font-size: 15px;
+    border: 1px solid $black-text;
+    height: fit-content;
+    padding: 2rem 1rem;
+    text-transform: uppercase;
+}
+
+.book-now__white {
+    font-size: 15px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 2rem 1rem;
+    height: fit-content;
+    background: transparent;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.language-bar__black {
+    margin-left: 10rem;
+    font-size: 20px;
+}
+
+.language-bar__white {
+    color: #ffffff;
+    margin-left: 10rem;
+    font-size: 20px;
+}
+
+.header-burger_menu {
+    cursor: pointer;
+}
+
+.elipsis-3 {
+    display: -webkit-box;   
+   -webkit-line-clamp: 3;   
+   -webkit-box-orient: vertical;     
+   overflow: hidden;
+}
+
+.elipsis-4 {
+    display: -webkit-box;   
+   -webkit-line-clamp: 4;   
+   -webkit-box-orient: vertical;     
+   overflow: hidden;
+}
+
+.elipsis-5 {
+    display: -webkit-box;   
+   -webkit-line-clamp: 5;   
+   -webkit-box-orient: vertical;     
+   overflow: hidden;
+}
+
+.elipsis-6 {
+    display: -webkit-box;   
+   -webkit-line-clamp: 6;   
+   -webkit-box-orient: vertical;     
+   overflow: hidden;
+}
+
+.elipsis-7 {
+    display: -webkit-box;   
+   -webkit-line-clamp: 7;   
+   -webkit-box-orient: vertical;     
+   overflow: hidden;
+}
+
+.elipsis-8 {
+    display: -webkit-box;   
+   -webkit-line-clamp: 8;   
+   -webkit-box-orient: vertical;     
+   overflow: hidden;
+}
+
+.elipsis-9 {
+    display: -webkit-box;   
+   -webkit-line-clamp: 9;   
+   -webkit-box-orient: vertical;     
+   overflow: hidden;
+}
+
+// Footer
+.footer {
+    width: 100%;
+    background: $black-footer;
+    &-wr {
+        margin: auto;
+        padding: 4rem 0;
+    }
+
+    &-cell {
+        width: 25%;
+
+        &__title {
+            text-align: center;
+            font-size: 3.2rem;
+            font-weight: bold;
+            color: $white;
+            text-transform: capitalize;
+            margin-bottom: 6rem;
+        }
+
+        &__subtitle {
+            text-align: center;
+            font-size: 2.2rem;
+            color: $white;
+            text-transform: capitalize;
+            margin: 0 10px;
+
+            &:hover {
+                color: #ffffff !important;
+            }
+
+            & a {
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .footer-cell__title {
+        margin-bottom: 0;
+    }
+}
+
+.background-full {
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.pagination > li:first-child > a {
+    display: none;
+}
+
+.page-title {
+    font-size: 8.4rem;
+    font-weight: bold;
+    word-spacing: 3rem;
+    margin-top: 30rem;
+    margin-bottom: 7.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #310000;
+}
+
+.onesoul {
+    color: #ffffff;
+    display: block;
+}
+
+.onesoul:hover {
+    color: #ffffff !important;
+}
+
+.see-more__btn {
+    border: none;
+    background: transparent;
+    color: $black-text;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: #000000;
+        transition: width .3s;
+    }
+    
+    &:hover:after {
+        width: 100%;
+        transition: width .3s
+    }
+}
+
+.see-more__btn:hover {
+    color: #000000;
+}
+
+.btn-outline-primary:hover {
+    color: currentColor !important;
+}
+
+.full {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.btn .btn-outline-primary .button-explore {
+    font-size: 15px;
+}
+
+.contact-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #91712B;
+    background: transparent;
+    margin-bottom: 10rem;
+    font-size: 2rem;
+    padding-bottom: 8px;
+}
+
+.textarea {
+    border: 1px solid #91712B;
+    font-size: 2rem;
+    background: transparent;
+    padding: 1.5rem 0 24.5rem 2rem;
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    display: none !important;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.luxury-swiper__controller {
+    left: 70%;
+    z-index: 10000;
+    bottom: 0%;
+}
+
+.luxury-next {
+    background-image: url('../Assets/icons/swiper-arrow-right.svg') !important;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.luxury-prev {
+    background-image: url('../Assets/icons/swiper-arrow-left.svg') !important;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.luxury-prev:focus, .luxury-next:focus {
+    outline: none;
+}
+
+@media(max-width: 1200px){
+    .rooms-description {
+        width: 100%;
+    }
+
+    .rooms-luxury {
+        margin-top: 6rem;
+    }
+
+    .rooms-description__title {
+        font-size: 4.5rem;
+        padding: 0 0 0px 0;
+    }
+
+    .page-title {
+        font-size: 6rem;
+    }
+}
+
+.padding-right {
+    padding-right: 125px;
+}
+
+.carousel-item.active, .carousel-item-next, .carousel-item-prev .carousel-inner {
+    height: 100%!important;
+}
+
+.carousel-inner {
+    height: 100%!important;
+}
+
+.carousel {
+    height: 100% !important;
+}
+
+.white {
+    color: #ffffff;
+}
+
+@media(max-width: 1300px) {
+    .footer .col {
+        margin-bottom: 1rem;
+    }
+}

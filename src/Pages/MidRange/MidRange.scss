@@ -1,0 +1,46 @@
+.midrange-credit__btn {
+    display: block;
+    width: fit-content;
+    font-size: 30px;
+    color: #000000;
+    padding: 25px 48px;
+    background-color: #B9AD93;
+    border: 1px solid #000000;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+
+    &:hover {
+        color: #FDE6A6;
+        background: #000000;
+        border: 1px solid #FDE6A6;
+    }
+}
+
+.midrange-swiper {
+    height: 64vh;
+
+    & .luxury-swiper__controller {
+        right: 5rem !important;
+        bottom: 0 !important;
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+
+    & .luxury-prev {
+        background-image: url('../../Assets/icons/midrange-arrow-left.svg') !important;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        background-repeat: no-repeat;
+    }
+
+    & .luxury-next {
+        background-image: url('../../Assets/icons/midrange-arrow-right.svg') !important;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        background-repeat: no-repeat;
+    }
+}

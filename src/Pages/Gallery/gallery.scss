@@ -1,0 +1,96 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  row-gap: 10px;
+  grid-gap: 10px;
+
+  
+  &-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.page-title {
+  margin-top: 0;
+}
+
+.pagination {
+    margin: 15px auto;
+    display: flex;
+    list-style: none;
+    outline: none;
+    width: fit-content;
+  }
+  .pagination > .active > a{
+    color: #000000;
+  }
+  .pagination > li > a{
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+  }
+  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    outline: none ;
+    font-size: 40px;
+    color: #000000;
+    opacity: 100%;
+  }
+  .pagination > li > a, .pagination > li > span{
+    color: #000000;
+    opacity: 20%;
+    font-size: 40px;
+  }
+  .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius: unset
+  }
+
+  .pagination .next {
+    background-image: url(/static/media/pagination-arrow.399e4112.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 16px;
+    margin-top: 20px;
+  }
+
+  .pagination > li > a, .pagination > li > span {
+    opacity: 0.2 !important;
+  }
+
+  .gallery-pagination {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+
+    & img {
+      width: 33%;
+    }
+  }
+
+
+  @media(max-width: 1200px){
+    .gallery {
+      grid-template-rows: 300px 300px 300px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media(max-width: 940px) {
+    .gallery {
+      grid-template-rows: 300px 300px 300px;
+      grid-template-columns: 1fr;
+    }
+    .pagination > li > a, .pagination > li > span {
+      font-size: 30px;
+    }
+  }
+
+  @media(max-width: 550px) {
+    .gallery {
+      grid-template-columns: 1fr;
+      grid-template-rows: 200px 200px 200px;
+    }
+  }

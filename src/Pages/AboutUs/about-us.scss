@@ -1,0 +1,276 @@
+.about-us {
+    margin: auto auto auto;
+    overflow: hidden;
+
+    &__wr {
+        position: relative;
+        margin-bottom: 0;
+
+        & .page-title {
+            margin-top: 50px;
+        }
+    }
+
+    &__info {
+        background: #ffffff;
+        -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.15);
+        box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.15);
+        padding: 107px 90px;
+        position: relative;
+        width: 60%;
+        height: auto;
+        margin: 40px auto;
+
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        line-height: 30px;
+        color: #310000;
+        opacity: 0.6;
+    }
+}
+
+
+
+
+
+.about-us__badge {
+    display: none;
+    position: absolute;
+    right: -83px;
+    top: -116px;
+}
+
+.about-us__first {
+    width: 50%;
+    border-bottom: 1px solid #91712B;
+    padding-bottom: 50px;
+}
+
+.about-us__title {
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 72px;
+    color: #310000;
+}
+
+.about-us__second {
+    font-size: 22px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20rem;
+    margin-top: 6rem;
+    color: #310000;
+    opacity: 0.6;
+}
+
+.about-us__paragraph {
+    width: 100%;
+    font-size: 22px;
+}
+
+.aboutus-goal__title {
+    font-size: 40px;
+    color: #310000;
+    position: relative;
+    margin: 45rem auto 0 auto;
+    width: fit-content;
+
+    & span {
+        position: absolute;
+        font-size: 145px;
+        color: #000000;
+        color: gray;
+        left: 20%;
+        top: -168%;
+    }
+}
+
+.about-us__goal {
+    margin-top: 140px;
+    display: grid;
+    grid-template-rows: 70vh;
+    grid-template-columns: 1fr 2fr;
+}
+
+.aboutus-goal__paragraph {
+    font-size: 22px;
+    line-height: 30px;
+    color: #310000;
+    opacity: 0.6;
+    /* margin: 70px; */
+    width: 80%;
+    /* margin: auto; */
+    margin-top: 1rem;
+}
+
+.aboutus-goal__paragraph p {
+    font-size: 22px;
+    line-height: 30px;
+    color: #310000;
+    opacity: 0.6;
+    margin: 70px;
+}
+
+.aboutus-goal__paragraph span {
+    font-size: 26px;
+    line-height: 35px;
+    text-transform: capitalize;
+}
+
+.about-us__since {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+
+    & span {
+        font-size: 26px;
+        line-height: 35px;
+        text-transform: capitalize;
+        padding: 50px;
+    }
+}
+
+.aboutus-goal__img {
+    width: 100%;
+    height: 80vh;
+}
+
+.goal-absolute {
+    opacity: 0.2;
+    right: 0;
+    top: 0;
+}
+
+@media(max-width: 800px) {
+    .about-us__first {
+        width: 100%;
+    }
+    .about-us__second {
+        margin-top: 6rem;
+        grid-gap: 2rem;
+    }
+    .about-us__absolute {
+        display: none;
+    }
+    .about-us__goal {
+        margin-top: 40px;
+    }
+    .about-us__second {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 0 10px;
+    }
+    .about-us__first {
+        margin: auto;
+    }
+
+    .about-us__title,.about-us__subtitle  {
+        text-align: center;
+    }
+}
+
+.about-us__absolute {
+    background-image: url("../../Assets//icons/menu-background.svg");
+    position: absolute;
+    width: 110rem;
+    height: 110rem;
+    right: -50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+@media(max-width: 1300px) {
+    .aboutus-goal__paragraph p {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 40px;
+    }
+    .about-us__badge {
+        position: absolute;
+        right: -25px;
+        top: -20px;
+        width: 100px;
+    
+    }
+    .about-us__second .col {
+        margin-bottom: 0;
+    }
+
+    .about-us__info {
+        width: 70%;
+        padding: 30px 23px;
+    }
+
+    .about-us__first {
+        padding-bottom: 1rem;
+    }
+
+    .about-us__paragraph {
+        font-size: 16px;
+    }
+
+    .rooms-wallpaper {
+        height: 400px;
+    }
+}
+
+@media(max-width: 990px) {
+    .about-us__goal {
+        grid-template-rows: 300px !important;
+
+    }
+    .about-us__since span {
+        font-size: 20px;
+    }
+    .about-us__goal {
+        grid-template-columns: 300px;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+    .about-us__since {
+        position: relative;
+    }
+    .aboutus-goal__paragraph p {
+        line-height: 25px;
+    }
+    .about-us {
+        margin: auto;
+    }
+    .about-us__wr {
+        margin-bottom: 100px;
+    }
+
+    .aboutus-goal__paragraph {
+        font-size: 19px;
+        line-height: 22px;
+        margin: 20px;
+    }
+
+    .about-us__info {
+        padding: 30px 20px;
+    }
+
+    .aboutus-goal__title {
+        font-size: 25px;
+
+        & span {
+            font-size: 90px;
+        }
+    }
+
+    .aboutus-goal__paragraph p {
+        font-size: 16px;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .aboutus-goal__title {
+        margin-top: 300px;
+    }
+
+}

@@ -1,0 +1,448 @@
+.luxury {
+    margin-top: 10rem;
+    overflow: hidden;
+}
+
+.luxury .swiper-wrapper {
+    height: 100% !important;
+}
+
+.luxury-absolute {
+    position: absolute;
+    background: #F8F7F4;
+    border-radius: 50%;
+    left: -27%;
+    top: 26%;
+    width: 130rem;
+    height: 130rem;
+    z-index: -1;
+}
+
+.luxury-images {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+@media(max-width: 1321px){
+    .luxury-images {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+}
+
+
+.luxury-swiper__img {
+    width: 100% !important;
+    margin: auto !important;
+    display: block !important;
+    height: 100% !important;
+    padding-bottom: 0;
+}
+// @media(max-width: 1350px){
+//     .luxury-images >div {
+//         height: 300px;
+//     }
+// }
+
+
+.luxury-about h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 6.5rem;
+    text-transform: capitalize;
+    text-align: left !important;
+}
+
+.luxury-about p {
+    font-size: 22px;
+    color: gray;
+    width: 100%;
+    margin-bottom: 11rem;
+    text-align: left !important;
+}
+
+.dest-cards__mobile .swiper-button-next:focus {
+    outline: none;
+}
+
+.dest-cards__mobile .swiper-button-prev:focus {
+    outline: none;
+}
+
+.luxury .swiper-button-prev,.luxury .swiper-button-next {
+    display: none!important;
+}
+
+.swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%)
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: white;
+}
+
+.swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 30rem !important;
+}
+
+.luxury .swiper-container {
+    height: 100%;
+}
+
+.luxury-swiper__controller {
+    left: 60% !important;
+    z-index: 100 !important;
+    top: 89% !important;
+}
+
+.luxury-restaurant {
+    margin-top: 300px;
+    margin-bottom: 30rem;
+
+    & .row {
+        width: 100%;
+    }
+
+    & h4 {
+    text-align: right;
+    font-style: italic;
+    font-size: 42px;
+    color: #1D1111;
+    margin-top: 50px;
+    }
+
+    &__wr {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+
+    &__img {
+      width: 60%;
+    }
+
+    &__half {
+        width: 30%;
+    }
+}
+
+.luxury-cell .flex {
+    margin-top: 6rem;
+}
+
+.luxury-cell .flex h4 {
+    font-size: 65px;
+}
+
+.luxury-cell .flex h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #A89562;
+    text-transform: capitalize;
+    margin-left: 40px;
+}
+
+.luxury-cell__txt {
+    padding: 0 60px;
+}
+
+.luxury-cell__txt h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 6rem;
+}
+
+.luxury-cell__txt p {
+    font-size: 22px;
+    color: gray;
+}
+
+.luxury-swiper__wr .luxury-container {
+    height: 115%;
+}
+
+.luxury-swiper {
+    height: 75vh;
+
+    & .relative {
+        height: 100% !important;
+        overflow: hidden !important;
+    }
+
+    &__wr {
+        height: 100% !important;
+    }
+}
+
+.per-night {
+    font-size: 18px;
+    border-bottom: 1px solid #A89562;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.luxury-about h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 7rem;
+    color: #310000;
+    text-transform: capitalize;
+}
+
+.luxury-style__wr {
+    padding: 0 0 100px 100px;
+
+    & h2 {
+        font-size: 50px;
+        font-weight: bold;
+        color: #310000;
+        margin-bottom: 70px;
+    }
+
+    & p {
+        font-size: 22px;
+        color: #310000;
+        opacity: 0.6;
+        line-height: 46px;
+    }
+}
+
+.mood-image__big {
+    padding-right: 100px;
+}
+
+.luxury-mood {
+    padding: 60px;
+
+    & h2 {
+        font-size: 50px;
+        font-weight: bold;
+        color: #310000;
+    }
+
+    & p {
+        font-size: 22px;
+        line-height: 46px;
+        color: #310000;
+        opacity: 0.6;
+    }
+}
+
+.luxury-about p {
+    font-size: 22px;
+    line-height: 46px;
+    color: #310000;
+    opacity: 0.6;
+    width: 150%;
+}
+
+.luxury-style {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 10rem;
+    margin-top: 13rem;
+
+    &__price {
+        font-size: 6.3rem;
+        margin-right: 7rem;
+    }
+}
+
+.luxury-credit h5 {
+    font-size: 18px;
+    margin-right: 20px;
+    line-height: 80px;
+}
+
+.luxury-credit {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.luxury-view__all {
+    font-size: 28px;
+    color: #000000;
+    border-bottom: 1px solid #A89562;
+    padding-bottom: 20px;
+    display: block;
+    width: fit-content;
+    margin: 10rem auto;
+}
+
+.luxury-kind {
+    color: #310000;
+    font-size: 18px;
+    text-align: center;
+}
+
+.luxury-credit__btn {
+    display: block;
+    width: fit-content;
+    font-size: 30px;
+    color: #000000;
+    padding: 25px 48px;
+    background-color: #FDE6A6;
+    border: 1px solid #000000;
+    text-transform: uppercase;
+
+    &:hover {
+        color: #FDE6A6 !important;
+        background: #000000;
+        border: 1px solid #FDE6A6;
+    }
+}
+
+.luxury-number {
+    left: 40%;
+    font-size: 23px;
+    color: #ffffff;
+    bottom: 7.8%;
+}
+
+.luxury-logo {
+    width: 330px;
+}
+
+@media(max-width: 400px) {
+    .landing-swiper__controller a {
+        margin-right: 10px;
+    }
+    .landing-swiper__seemore:after {
+        right: -5px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .luxury-logo {
+        width: 150px;
+    }
+    
+    .luxury-restaurant__half {
+        display: none !important;
+    }
+    .luxury-mood h2 {
+        margin-top: 0 !important;
+    }
+    .mood-image__big {
+        padding-right: 0;
+    }
+    .luxury-mood p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .luxury-mood {
+        padding: 0;
+    }
+    .luxury-style__wr p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .luxury-style__wr h2 {
+        margin-bottom: 20px;
+    }
+    .luxury-style__wr {
+        padding: 0;
+    }
+    .luxury-about h2 {
+        text-align: center !important;
+    }
+
+    .swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+        left: 30% !important;
+    }
+
+    .luxury-swiper__controller {
+        left: 70%!important;
+        bottom: 0 !important;
+    }
+
+    .luxury-credit {
+        display: block;
+        width: 100%;
+        margin: 0px auto 10rem auto;
+    }
+    .luxury-style p {
+        padding: 0 10px;
+    }
+    .luxury-restaurant h4 {
+        font-size: 23px;
+    }
+    .luxury-cell__txt h2 {
+        margin: 50px 0 0 0 !important;
+    }
+    .luxury-credit h5 {
+        text-align: center;
+    }
+    .luxury-about p {
+        width: 100%;
+        line-height: 30px;
+    }
+    .luxury-cell__txt {
+        overflow: hidden;
+        padding: 20px;
+    }
+    .luxury-credit__btn {
+        font-size: 16px;
+        padding: 11px 30px;
+        margin: auto;
+    }
+    .luxury-about p {
+        margin: 0 auto 20px auto;
+        font-size: 16px;
+    }
+    .luxury-swiper__controller {
+        left: 60% !important;
+        bottom: -4px !important;
+    }
+    .luxury-about {
+        padding-left: 0;
+        text-align: center;
+    }
+    .luxury-cell__txt p {
+        font-size: 16px;
+    }
+    .luxury-absolute {
+        display: none;
+    }
+    .luxury-style {
+        grid-template-columns: 350px;
+        grid-template-rows: auto;
+        justify-content: center;
+        row-gap: 3rem;
+    }
+    .luxury-restaurant .row {
+        display: block;
+    }
+
+    .luxury-restaurant .col {
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .luxury-restaurant__wr {
+        display: block;
+    }
+
+    .luxury-restaurant__img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .luxury-restaurant__half {
+        display: block;
+        width: 100%;
+
+        & img {
+            width: 50% !important;
+            margin-left: 5px;
+        }
+    }
+}
+

@@ -1,0 +1,75 @@
+
+
+.swiper-div {
+    width: calc(100% - 500px);
+}
+
+.landing-head__swiper .swiper-wrapper {
+    height: 100% !important;
+}
+
+.swiper-wrapper {
+    height: 96% !important;
+}
+
+.landing-btn__next, .landing-btn__prev {
+    background: none !important;
+    border: none !important;
+    font-size: 20px;
+}
+
+.landing-btn__next:focus, .landing-btn__prev:focus {
+    outline: none;
+}
+
+.landing-swiper__controller {
+    width: calc(100% - 750px);
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10rem;
+
+    & h3 {
+        font-size: 54px;
+        font-weight: bold;
+    }
+
+    & a {
+        font-size: 21px;
+        color: #000000;
+        margin-right: 50px;
+        margin-top: 50px;
+        display: block;
+    }
+}
+
+@media(max-width: 1650px) {
+    .landing-swiper__controller {
+        width: calc(100% - 200px);
+    }
+}
+
+@media(max-width: 1050px){
+    .landing-swiper__controller {
+        width: calc(100% - 50px);
+    }
+
+    .landing-rooms__prev, 
+    .landing-rooms__next {
+        font-size: 16px;
+    }
+
+    .landing-swiper h4 {
+        font-size: 35px;
+    }
+
+    .landing-swiper__controller a {
+        font-size: 12px;
+    }
+
+    .landing-swiper__seemore:after {
+        height: 17px;
+        right: -25px;
+        top: 1px;
+    }
+}
